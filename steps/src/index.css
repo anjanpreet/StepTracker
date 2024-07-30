@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+#container {
+  width: 31.25em;
+  height: 15em;
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#steps-tracker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.step {
+  width: 2em;
+  height: 2em;
+  border-radius: 20px;
+  background-color: darkgray;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+
+.active {
+  background-color: purple;
+}
+
+#steps-message {
+  text-align: center;
+}
+
+#steps-message p {
+  font-size: 2em;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#previous,
+#next {
+  width: 6em;
+  height: 2em;
+  background-color: purple;
+  color: white;
+}
